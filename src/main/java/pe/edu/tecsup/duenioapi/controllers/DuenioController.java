@@ -17,7 +17,7 @@ public class DuenioController {
     private static final Logger logger = LoggerFactory.getLogger(DuenioService.class);
     @Autowired
     private DuenioService duenioService;
-    @GetMapping("/duenio")
+    @GetMapping("/duenios")
     public ResponseEntity<List<Duenio>> obtenerDuenios() {
         try {
             List<Duenio> duenios = duenioService.findAll();
